@@ -1,0 +1,145 @@
+/* ggs_page_2.php */
+
+/*
+* 0. FONT
+*	1. SITE SIZING
+*	2. CONTENTS
+*		2.1 HEADER
+*		2.2 MAIN SECTION
+*/
+
+
+/* ==========================================================================
+  0. FONT
+   ========================================================================== */
+
+  /************* Common *************/
+  @font-face {
+    font-family: 'RixBalgeunGothic';
+    src: url(./font/Rix밝은고딕M.ttf) format('truetype');
+  }
+
+
+/* ==========================================================================
+	1. SITE SIZING
+   ========================================================================== */
+
+ /* html, body */
+ html, body {
+ 	height: 100%;
+ 	margin: 0;
+
+  user-select: none;
+ }
+
+ /* Site Wrapper */
+ #site-wrapper {
+ 	height: 100%;
+ }
+
+ /* Header */
+ #header {
+  position: relative;
+  padding-top: 100px;
+ }
+
+ /* Main Section */
+ #main {
+  position: relative;
+ }
+
+/* ==========================================================================
+	2. CONTENTS
+   ========================================================================== */
+
+ /**
+ * 2.1 Header
+ * --------------------------------------------------------------------------
+ */
+
+  /* Logo Container */
+  #logo-container {
+  	position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Logo */
+  .logo {
+    height: 115.536px;
+  }
+
+  /* Title Container */
+  #title-container {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Title */
+  #title {
+    font-size: 30px;
+    font-family: 'RixBalgeunGothic';
+  }
+
+ /**
+ * 2.2 Main Section
+ * --------------------------------------------------------------------------
+ */
+
+  /* Button Container */
+  #btn-container {
+    position: relative;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #btn-container ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Button */
+  .btn {
+    position: relative;
+    display: inline-block;
+    margin: 0 100px;
+
+    height: 412.5px;
+    width: 412.5px;
+    border-radius: 10px;
+
+    background-color: #841A2A;
+    color: white;
+  }
+
+  /* Button Title */
+  .btn-title-container {
+    position: relative;
+    top: 60px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-title {
+    font-size: 30px;
+    font-family: 'RixBalgeunGothic';
+  }
+
+  /* Button Image */
+  .btn-img-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: calc(100% - 30px);
+  }
+
+  .btn-img {
+    height: 200px;
+  }
