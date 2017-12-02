@@ -57,9 +57,9 @@
 			$(".btn").click(function(){
 				var btn_id = $(this).attr("id");
 				if(btn_id=="accept-btn") {
-					document.location.href = './ggs_page_1.1.php';
+					document.location.href = './ggs_11.php';
 				} else {
-					document.location.href = './ggs_page_1.2.php';
+					document.location.href = './ggs_12.php';
 				}
 			})
 		})
