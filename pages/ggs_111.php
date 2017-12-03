@@ -29,11 +29,13 @@
 
 <body style="background-color:#F7F7F7;">
 
-	<!-- Modal1 Opening Button -->
-	<button id="modal1-open" class="btn btn-default">날짜 선택</button>
+	<input type="hidden" id="isModal1Fin" value="false">
+	<input type="hidden" id="isModal2Fin" value="false">
 
-	<!-- Modal1 Opening Button -->
-	<button id="modal2-open" class="btn btn-default">강의실 선택</button>
+
+	<!-- Modal Opening Button -->
+	<button id="modal1-open" class="btn btn-default">날짜 선택</button>
+	<button id="modal2-open" class="btn btn-default" disabled>강의실 선택</button>
 
 
 	<!-- Modal1 -->
@@ -69,8 +71,8 @@
 			<!-- Modal Footer -->
 			<div class="khu-modal-footer">
 				<div class="khu-modal-btn-group">
-					<button type="button" class="btn btn-warning">취소</button>
-					<button type="button" class="btn btn-success">확인</button>
+					<button type="button" id="modal1-btn1" class="btn btn-warning">취소</button>
+					<button type="button" id="modal1-btn2" class="btn btn-success">확인</button>
 				</div>
 			</div>
 
@@ -110,8 +112,8 @@
 			<!-- Modal Footer -->
 			<div class="khu-modal-footer">
 				<div class="khu-modal-btn-group">
-					<button type="button" class="btn btn-warning">취소</button>
-					<button type="button" class="btn btn-success">확인</button>
+					<button type="button" id="modal2-btn1" class="btn btn-warning">취소</button>
+					<button type="button" id="modal2-btn2" class="btn btn-success">확인</button>
 				</div>
 			</div>
 
@@ -120,35 +122,10 @@
 	</div>
 
 
-	<!-- JQuery UI :: datepicker -->
-	<script>
-		$("#date").bootstrapMaterialDatePicker({
-			weekStart: 0,
-			okText: "확인",
-			cancelText: "취소",
-			time: false,
-			format: 'YYYY-MM-DD dddd'
-		});
+	<!-- Javascript :: Load Date-Time-Picker -->
+	<script src="./../js/load_picker.js"></script>
 
-		$("#time-start").bootstrapMaterialDatePicker({
-			date: false,
-			shortTime: true,
-			okText: "확인",
-			cancelText: "취소",
-			format: 'HH:mm'
-		});
-
-		$("#time-end").bootstrapMaterialDatePicker({
-			date: false,
-			shortTime: true,
-			okText: "확인",
-			cancelText: "취소",
-			format: 'HH:mm'
-		});
-
-	</script>
-
-	<!-- Javascript :: Modal Open -->
+	<!-- Javascript :: Modal Control -->
 	<script src="./../js/modal_control.js"></script>
 
 </body>
