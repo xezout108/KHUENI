@@ -1,0 +1,107 @@
+/* The Modal (background) */
+.khu-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Wrapper */
+.khu-modal-wrapper {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    border-radius: 6px 6px 6px 6px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.khu-modal-header {
+    vertical-align: middle;
+    background-color: #891A2B;
+    color: white;
+    padding: 2px 16px;
+    border-radius: 6px 6px 6px 6px;
+    height: 5%;
+    min-height: 40px;
+}
+
+.khu-modal-body {
+    padding: 15px 5%;
+    background-color: white;
+    height: 20%;
+    min-height: 100px;
+}
+
+.khu-modal-left {
+    margin: 20px 0;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+
+.khu-modal-right {
+    margin: 20px 0;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+
+.khu-modal-footer {
+    height: 10%;
+    min-height: 50px;
+    background-color: #891A2B;
+}
+
+.khu-modal-btn-group {
+    float: right;
+    padding-right: 20px;
+    height: 95%;
+}
+
+.khu-modal-label {
+    display: block;
+}
+
+/* The Close Button */
+.close {
+    margin-top: 4.5px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.timepicker {
+    width: 48%;
+}
+
+.timepicker:hover {
+    cursor: pointer;
+}
+
+#date {
+    cursor: pointer;
+}
+
+#date:hover {
+    cursor: pointer;
+}
+
+.dtp-date, .dtp-time {
+    background-color: #891A2B;
+}
