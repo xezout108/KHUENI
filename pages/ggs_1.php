@@ -1,3 +1,22 @@
+<?php
+   if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
+
+   if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_name'])) {
+      echo "<script>alert('로그인을 하세요!!!!!!!');</script>";
+      echo "<script>document.location.href='./../index.php';</script>";
+   }
+
+
+
+   $user_id = $_SESSION['user_id'];
+   $user_name = $_SESSION['user_name'];
+   $college = $_SESSION['college'];
+   $major = $_SESSION['major'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
